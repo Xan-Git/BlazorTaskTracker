@@ -1,9 +1,19 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Makeup Tasks</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div class="site-wrapper">
+    <div class="app-container">
+        <header>
+            <span class="site-title">💄 Makeup Tasks</span>
+            <a>Sign in | Register</a>
+        </header>
+        <main class="tasks-container">
+            <h1 class="task-list-title">My First List</h1>
+            <ul class="task-list">
+                <TaskItemComponent />
+                <TaskItemComponent />
+            </ul>
+        </main>    
+    </div>
+</div>

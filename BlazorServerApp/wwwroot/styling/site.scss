@@ -1,0 +1,112 @@
+﻿/* Colors */
+$Site-Background: #F2B988;
+$App-Background: #59391D;
+$Primary-Color: #FFCBCB;
+
+* {
+    font-family: acumin-pro, sans-serif;
+
+    body,
+    h1 {
+        margin: 0;
+    }
+
+    
+
+    
+}
+
+.site-wrapper {
+    background-color: $Site-Background;
+
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: $Primary-Color;
+}
+
+.app-container {
+    background-color: $App-Background;
+    width: 90%;
+    padding: 0 0.5rem;
+    margin: 0.5rem 0;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1.5rem;
+
+        .site-title {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.tasks-container {
+
+    .task-list-title {
+        text-decoration: underline;
+    }
+
+    .task-list {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .task-item {
+        display: flex;
+        align-items: center;
+
+        .task-text + * {
+            margin-left: auto;
+        }
+
+        button {
+            background-color: rgba(0, 0, 0, 0);
+            color: $Primary-Color;
+            border: none;
+            font-size: 1.2rem;
+            padding: 0 0.5rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* DEV ONLY*/
+.task-list-title {
+    border: 1px solid black;
+}
+
+ul {
+    border: 1px solid red;
+}
+
+.task-item {
+    border: 1px solid green;
+}
+
+/*
+.task-item {
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+.task-list {
+    background-color: lightcyan;
+}
+
+.tasks-container {
+    background-color: gainsboro;
+}
+
+*/

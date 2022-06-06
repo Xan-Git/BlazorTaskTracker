@@ -1,0 +1,83 @@
+﻿/* Colors */
+* {
+  font-family: acumin-pro, sans-serif;
+}
+* body,
+* h1 {
+  margin: 0;
+}
+
+.site-wrapper {
+  background-color: #F2B988;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  color: #FFCBCB;
+}
+
+.app-container {
+  background-color: #59391D;
+  width: 90%;
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
+}
+.app-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+.app-container header .site-title {
+  font-size: 1.2rem;
+}
+
+.tasks-container .task-list-title {
+  text-decoration: underline;
+}
+.tasks-container .task-list {
+  padding-left: 0;
+  margin: 0;
+}
+.tasks-container .task-item {
+  display: flex;
+  align-items: center;
+}
+.tasks-container .task-item .task-text + * {
+  margin-left: auto;
+}
+.tasks-container .task-item button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFCBCB;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+/* DEV ONLY*/
+.task-list-title {
+  border: 1px solid black;
+}
+
+ul {
+  border: 1px solid red;
+}
+
+.task-item {
+  border: 1px solid green;
+}
+
+/*
+.task-item {
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+.task-list {
+    background-color: lightcyan;
+}
+
+.tasks-container {
+    background-color: gainsboro;
+}
+
+*/
