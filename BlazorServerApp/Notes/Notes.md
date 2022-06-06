@@ -18,5 +18,7 @@
 - Reminders/Calendar/DueDates ??
 
 
+## Misc
+- first make edit via button, then refactor if want to try click-in-to-edit and enter to save
 
 
