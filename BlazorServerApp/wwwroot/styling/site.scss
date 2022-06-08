@@ -7,7 +7,8 @@ $Primary-Color: #FFCBCB;
     font-family: acumin-pro, sans-serif;
 
     body,
-    h1 {
+    h1,
+    p {
         margin: 0;
     }
 
@@ -58,6 +59,16 @@ $Primary-Color: #FFCBCB;
         display: flex;
         align-items: center;
 
+        
+
+        & > * {
+            padding: 0 0.35rem;
+        }
+
+        .task-checkbox {
+            transform: translateY(3px);
+        }
+
         .task-text + * {
             margin-left: auto;
         }
@@ -67,7 +78,11 @@ $Primary-Color: #FFCBCB;
             color: $Primary-Color;
             border: none;
             font-size: 1.2rem;
-            padding: 0 0.5rem;
+        }
+
+        button:hover {
+            cursor: pointer;
+            border-bottom: 1px solid black;
         }
     }
 }
@@ -83,6 +98,8 @@ $Primary-Color: #FFCBCB;
 
 
 /* DEV ONLY*/
+
+/*
 .task-list-title {
     border: 1px solid black;
 }
@@ -94,6 +111,8 @@ ul {
 .task-item {
     border: 1px solid green;
 }
+
+*/
 
 /*
 .task-item {

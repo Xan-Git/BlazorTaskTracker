@@ -3,7 +3,8 @@
   font-family: acumin-pro, sans-serif;
 }
 * body,
-* h1 {
+* h1,
+* p {
   margin: 0;
 }
 
@@ -42,6 +43,12 @@
   display: flex;
   align-items: center;
 }
+.tasks-container .task-item > * {
+  padding: 0 0.35rem;
+}
+.tasks-container .task-item .task-checkbox {
+  transform: translateY(3px);
+}
 .tasks-container .task-item .task-text + * {
   margin-left: auto;
 }
@@ -50,22 +57,27 @@
   color: #FFCBCB;
   border: none;
   font-size: 1.2rem;
-  padding: 0 0.5rem;
+}
+.tasks-container .task-item button:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
 }
 
 /* DEV ONLY*/
+/*
 .task-list-title {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 ul {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 
 .task-item {
-  border: 1px solid green;
+    border: 1px solid green;
 }
 
+*/
 /*
 .task-item {
     background-color: lightcoral;
